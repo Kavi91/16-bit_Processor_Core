@@ -11,3 +11,7 @@ This design comprises the following key components:
 6. 2x16 Multiplexer (MUXM) - Used for data selection and routing.
 7. 3x16 Multiplexer (MUXD) - Enables versatile data selection and control.
 8. 2x16 Multiplexer (MUXB) - Facilitates flexible data routing.
+
+--
+
+The architectural design of this processor core incorporates a SystemVerilog model created at the register level, which underwent synthesis using the QuestaSim Integrated Development Environment (IDE) from Siemens. To verify the functionality of each RTL (Register-Transfer Level) model, manual testbenches and test programs were written. The generated waveforms within the IDE were utilized to validate the functionality of individual RTL modules and the overall design.
