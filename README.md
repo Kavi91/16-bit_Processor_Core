@@ -4,8 +4,9 @@ The primary objective of this project revolves around the development of a 16-bi
 <img width="622" alt="Screenshot 2024-01-31 at 15 15 19" src="https://github.com/Kavi91/16-bit_Processor_Core/assets/153508129/62da057e-2b8c-4913-9efa-573b541e56bd">
 
 
-## The primary objective of this project revolves around the development of a 16-bit instruction set processor. 
-This design comprises the following key components:
+ 
+### This design comprises the following key components:
+
 1. Program Counter (PC) - Responsible for tracking the program's execution.
 2. Instruction Register (IR) - Stores the current instruction being processed.
 3. Control Unit (CU) - Manages and coordinates the processor's operations.
