@@ -1,0 +1,50 @@
+ 
+****************************************
+Report : reference
+Design : rb
+Version: T-2022.03-SP5-1
+Date   : Sat Nov  4 23:54:05 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_HVT         saed32hvt_tt1p05v25c
+                                  2.033152       4      8.132608  
+AND3X1_HVT         saed32hvt_tt1p05v25c
+                                  2.287296       9     20.585665  
+AND4X1_HVT         saed32hvt_tt1p05v25c
+                                  2.541440      18     45.745920  
+AO22X1_HVT         saed32hvt_tt1p05v25c
+                                  2.541440     336    853.923843  
+AOI22X1_HVT        saed32hvt_tt1p05v25c
+                                  3.049728     128    390.365173  
+DFFARX1_HVT        saed32hvt_tt1p05v25c
+                                  7.116032     240   1707.847710  n
+INVX0_HVT          saed32hvt_tt1p05v25c
+                                  1.270720      28     35.580160  
+NAND2X0_HVT        saed32hvt_tt1p05v25c
+                                  1.524864      67    102.165885  
+NAND3X0_HVT        saed32hvt_tt1p05v25c
+                                  1.779008      81    144.099651  
+NBUFFX2_HVT        saed32hvt_tt1p05v25c
+                                  2.033152      22     44.729346  
+NOR3X0_HVT         saed32hvt_tt1p05v25c
+                                  2.795584       7     19.569088  
+OA21X1_HVT         saed32hvt_tt1p05v25c
+                                  2.541440       1      2.541440  
+OR4X1_HVT          saed32hvt_tt1p05v25c
+                                  3.558016      32    113.856514  
+-----------------------------------------------------------------------------
+Total 13 references                                  3489.143003
+1

@@ -1,0 +1,242 @@
+
+AutoCheck Compile Summary
+-------------------------------------------------------------------------------
+Check                     Evaluations         Found        Waived
+-------------------------------------------------------------------------------
+ASSIGN_IMPLICIT_CONSTANT           40             0             0
+CASE_DUPLICATE                      5             0             0
+CLK_DELAY                           4             0             0
+CLK_IN_DATA                        76             0             0
+COMBO_LOOP                         59             0             0
+DECLARATION_UNDRIVEN               26             0             0
+DECLARATION_UNUSED                 26             0             0
+DECLARATION_UNUSED_UNDRIVEN         0             0             0
+FUNCTION_INCOMPLETE_ASSIGN          0             0             0
+INDEX_UNREACHABLE                 256             0             0
+LATCH_INFERRED                     24             0             0
+LOGIC_UNDRIVEN                     26             0             0
+LOGIC_UNUSED                       16             0             0
+PORT_UNDRIVEN                      62             0             0
+PORT_UNUSED                        62             0             0
+REG_MIXED_ASSIGNS                  43             0             0
+REG_NO_RESET                       19             0             0
+REG_RACE                            0             0             0
+REG_VARIABLE_ARESET                38             0             0
+RESET_HIGH_LOW                      1             0             0
+RESET_SYNC_ASYNC                    1             0             0
+SLIST_INCOMPLETE                   24             0             0
+X_ASSIGN_REACHABLE                  0             0             0
+-------------------------------------------------------------------------------
+AC Total                          808             0             0
+-------------------------------------------------------------------------------
+
+
+AutoCheck Verify Summary
+-------------------------------------------------------------------------------
+Check                     Evaluations         Found        Waived
+-------------------------------------------------------------------------------
+ARITH_OVERFLOW_SUB                  0             0             0
+ARITH_OVERFLOW_VAL                  7             2             0
+ARITH_ZERO_DIV                      0             0             0
+ARITH_ZERO_MOD                      0             0             0
+BLOCK_UNREACHABLE                  72             0             0
+BUS_MULTIPLY_DRIVEN                 0             0             0
+BUS_UNDRIVEN                        0             0             0
+BUS_VALUE_CONFLICT                  0             0             0
+CASE_DEFAULT                        4             1             0
+CASE_FULL                           0             0             0
+CASE_PARALLEL                       0             0             0
+FSM_DEADLOCK_STATE                  5             1             0
+FSM_LOCKOUT_STATE                   5             0             0
+FSM_STUCK_BIT                       4             0             0
+FSM_UNREACHABLE_STATE               5             0             0
+FSM_UNREACHABLE_TRANS               7             0             0
+INDEX_ILLEGAL                       3             0             0
+INIT_X_OPTIMISM                     4             0             0
+INIT_X_PESSIMISM                    0             0             0
+INIT_X_UNRESOLVED                   0             0             0
+INIT_X_UNRESOLVED_MEM               0             0             0
+ONE_COLD                            0             0             0
+ONE_HOT                             0             0             0
+REG_MULTIPLY_DRIVEN                 0             0             0
+REG_STUCK_AT                       18             7             0
+REG_TOGGLE_VIOLATION                0             0             0
+-------------------------------------------------------------------------------
+AC Total                          134            11             0
+-------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------
+AutoCheck Details
+-----------------------------------------------------------
+
+Type      : ARITH_OVERFLOW_VAL
+Severity  : Caution
+Status    : Uninspected
+Module    : pc
+Name      : pc_r
+Instance  : PC
+Location  : /homedir03/krathnay23/DT2_2023/project/workdir/input/pc.sv:26
+Assignment Width: 16
+Waveform Distance: 5
+
+Type      : ARITH_OVERFLOW_VAL
+Severity  : Caution
+Status    : Uninspected
+Module    : pc
+Name      : pc_r
+Instance  : PC
+Location  : /homedir03/krathnay23/DT2_2023/project/workdir/input/pc.sv:27
+Assignment Width: 16
+Waveform Distance: 5
+
+Type      : CASE_DEFAULT
+Severity  : Violation
+Status    : Uninspected
+Module    : cu
+Case Control: opcode
+Instance  : CU
+Location  : /homedir03/krathnay23/DT2_2023/project/workdir/input/cu.sv:325
+Waveform Distance: 3
+
+Type      : FSM_DEADLOCK_STATE
+Severity  : Caution
+Status    : Uninspected
+Module    : cu
+Instance  : CU
+FSM       : st_r
+Deadend State: HLT
+Location  : /homedir03/krathnay23/DT2_2023/project/workdir/input/cu.sv:335
+Waveform Distance: 4
+
+Type      : REG_STUCK_AT
+Severity  : Caution
+Status    : Uninspected
+Module    : rb
+Signal    : rb_r[10]
+Instance  : RB
+Value     : 16'b0000000000000000
+Location  : /homedir03/krathnay23/DT2_2023/project/workdir/input/rb.sv:16
+
+Type      : REG_STUCK_AT
+Severity  : Caution
+Status    : Uninspected
+Module    : rb
+Signal    : rb_r[11]
+Instance  : RB
+Value     : 16'b0000000000000000
+Location  : /homedir03/krathnay23/DT2_2023/project/workdir/input/rb.sv:16
+
+Type      : REG_STUCK_AT
+Severity  : Caution
+Status    : Uninspected
+Module    : rb
+Signal    : rb_r[12]
+Instance  : RB
+Value     : 16'b0000000000000000
+Location  : /homedir03/krathnay23/DT2_2023/project/workdir/input/rb.sv:16
+
+Type      : REG_STUCK_AT
+Severity  : Caution
+Status    : Uninspected
+Module    : rb
+Signal    : rb_r[13]
+Instance  : RB
+Value     : 16'b0000000000000000
+Location  : /homedir03/krathnay23/DT2_2023/project/workdir/input/rb.sv:16
+
+Type      : REG_STUCK_AT
+Severity  : Caution
+Status    : Uninspected
+Module    : rb
+Signal    : rb_r[14]
+Instance  : RB
+Value     : 16'b0000000000000000
+Location  : /homedir03/krathnay23/DT2_2023/project/workdir/input/rb.sv:16
+
+Type      : REG_STUCK_AT
+Severity  : Caution
+Status    : Uninspected
+Module    : rb
+Signal    : rb_r[15]
+Instance  : RB
+Value     : 16'b0000000000000000
+Location  : /homedir03/krathnay23/DT2_2023/project/workdir/input/rb.sv:16
+
+Type      : REG_STUCK_AT
+Severity  : Caution
+Status    : Uninspected
+Module    : rb
+Signal    : rb_r[9]
+Instance  : RB
+Value     : 16'b0000000000000000
+Location  : /homedir03/krathnay23/DT2_2023/project/workdir/input/rb.sv:16
+
+-----------------------------------------------------------
+
+-------------------------------------------------------------------------------
+CPU Time per Check Type
+-------------------------------------------------------------------------------
+ %   Seconds    Check
+-------------------------------------------------------------------------------
+ 0.0%      0    ARITH_OVERFLOW_SUB
+ 0.0%      0    ARITH_OVERFLOW_VAL
+ 0.0%      0    ARITH_ZERO_DIV
+ 0.0%      0    ARITH_ZERO_MOD
+ 9.2%      0    BLOCK_UNREACHABLE
+ 0.0%      0    BUS_MULTIPLY_DRIVEN
+ 0.0%      0    BUS_UNDRIVEN
+ 0.0%      0    BUS_VALUE_CONFLICT
+ 0.0%      0    CASE_DEFAULT
+ 0.0%      0    CASE_FULL
+ 0.0%      0    CASE_PARALLEL
+45.0%      1    FSM_DEADLOCK_STATE
+45.0%      1    FSM_LOCKOUT_STATE
+ 0.0%      0    FSM_STUCK_BIT
+ 0.0%      0    FSM_UNREACHABLE_STATE
+ 0.0%      0    FSM_UNREACHABLE_TRANS
+ 0.0%      0    INDEX_ILLEGAL
+ 0.0%      0    INIT_X_OPTIMISM
+ 0.0%      0    INIT_X_PESSIMISM
+ 0.0%      0    INIT_X_UNRESOLVED
+ 0.0%      0    INIT_X_UNRESOLVED_MEM
+ 0.0%      0    ONE_COLD
+ 0.0%      0    ONE_HOT
+ 0.0%      0    REG_MULTIPLY_DRIVEN
+ 0.7%      0    REG_STUCK_AT
+ 0.0%      0    REG_TOGGLE_VIOLATION
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Unused autocheck_report Directives
+-------------------------------------------------------------------------------
+<none>
+-------------------------------------------------------------------------------
+
+
+
+----- Detailed Process Statistics -----
+Elapsed Time                       1 s 
+-------- Orchestration Process --------
+-------- kataja8.oulu.fi:6756 ---------
+CPU Time                           0 s 
+Peak Memory                      0.3 GB
+---------- Engine Processes -----------
+-------- kataja8.oulu.fi:6774 ---------
+CPU Time                           1 s 
+Peak Memory                      0.2 GB
+CPU Utilization                    0 % 
+-------- kataja8.oulu.fi:6775 ---------
+CPU Time                           1 s 
+Peak Memory                      0.2 GB
+CPU Utilization                    0 % 
+-------- kataja8.oulu.fi:6778 ---------
+CPU Time                           1 s 
+Peak Memory                      0.3 GB
+CPU Utilization                    0 % 
+-------- kataja8.oulu.fi:6780 ---------
+CPU Time                           1 s 
+Peak Memory                      0.2 GB
+CPU Utilization                    0 % 
+---------------------------------------
+

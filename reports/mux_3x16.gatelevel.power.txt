@@ -1,0 +1,61 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : mux_3x16
+Version: T-2022.03-SP5-1
+Date   : Sat Nov  4 12:30:20 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed32hvt_tt1p05v25c (File: /research/cas/public/DT2_2023/lib/logic_lib/saed32hvt_tt1p05v25c.db)
+
+
+Operating Conditions: tt1p05v25c   Library: saed32hvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+mux_3x16               ForQA             saed32hvt_tt1p05v25c
+
+
+Global Operating Voltage = 1.05 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 408.2067 nW   (55%)
+  Net Switching Power  = 328.4426 nW   (45%)
+                         ---------
+Total Dynamic Power    = 736.6493 nW  (100%)
+
+Cell Leakage Power     = 192.5373 nW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)  i
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.4082            0.3284        1.9254e+05            0.9292  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total              0.4082 uW         0.3284 uW     1.9254e+05 pW         0.9292 uW
+1

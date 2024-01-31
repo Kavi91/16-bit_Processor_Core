@@ -1,0 +1,37 @@
+ 
+****************************************
+Report : area
+Design : cu
+Version: T-2022.03-SP5-1
+Date   : Sun Nov  5 10:58:00 2023
+****************************************
+
+Library(s) Used:
+
+    saed32hvt_tt1p05v25c (File: /research/cas/public/DT2_2023/lib/logic_lib/saed32hvt_tt1p05v25c.db)
+
+Number of ports:                           46
+Number of nets:                           119
+Number of cells:                           95
+Number of combinational cells:             90
+Number of sequential cells:                 4
+Number of macros/black boxes:               0
+Number of buf/inv:                         17
+Number of references:                      18
+
+Combinational area:                186.287554
+Buf/Inv area:                       21.602240
+Noncombinational area:              28.464128
+Macro/Black Box area:                0.000000
+Net Interconnect area:              51.614222
+
+Total cell area:                   214.751682
+Total area:                        266.365905
+
+Area of detected synthetic parts
+--------------------------------
+  No DW parts to report!
+
+Total synthetic cell area:              0.0000  0.0%  
+
+1
